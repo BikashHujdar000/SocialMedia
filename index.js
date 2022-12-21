@@ -27,6 +27,13 @@ app.use(helmet());
 app.use("/api/users",userRoutes)
 app.use("/api/auths",userAuth)
 
+app.get ("/",(req,res)=>
+{
+    res.send("This is Social media app")
+})
+
+
+
 
 app.listen(3000, () => {
     console.log("listening at port 3000")
