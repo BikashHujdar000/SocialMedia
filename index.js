@@ -11,7 +11,7 @@ const userAuth = require("./routes/auth")
 dotenv.config();
 
 
-mongoose.connect(process.env.MONGO_URL
+mongoose.connect("mongodb+srv://bikash:bikash@socailapp.itqisqn.mongodb.net/bikashdev?retryWrites=true&w=majority"
     , { useNewUrlParser: true, useUnifiedTopology: true }, () =>
 (
     console.log("connection Sucessfull in Mongodb")
