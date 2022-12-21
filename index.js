@@ -11,12 +11,12 @@ const userAuth = require("./routes/auth")
 dotenv.config();
 
 
-mongoose.connect("mongodb+srv://bikash:bikash@socailapp.itqisqn.mongodb.net/bikashdev?retryWrites=true&w=majority"
+mongoose.connect(process.env.MONGO_URL)
     , { useNewUrlParser: true, useUnifiedTopology: true }, () =>
 (
     console.log("connection Sucessfull in Mongodb")
 )
-)
+
 
 // middleware
 
